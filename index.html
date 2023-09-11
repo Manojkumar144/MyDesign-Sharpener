@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     <style>
+    .navbar-brand{
+           margin-left:80px;
+           color: orange;
+           font-size: 18px;
+    }
+    .navbar-nav
+    {
+        margin-right: 50px;
+    }
+    .nav-link
+    {
+        border: 1px solid orange;
+        margin-right: 10px;
+        margin-left: 4px;
+        color: grey;
+        font-size: 18px;
+    }
+    body
+    {
+         background-size:cover;
+    }
+    .btn
+    {
+        color:grey;
+        border: 1px solid orange;
+        background-color: #F5D6A7;
+        margin-right: 2px;
+    }
+    .btn:hover
+    {
+        background-color: #FFBB5C;
+    }
+    .modal-header
+    {
+        margin: auto;
+        color: orange;
+    }
+   
+   .call
+   {
+    width: 100%;
+   }
+   p
+   {
+    text-align: center;
+   }
+   
+   .modal-title::after {
+        display: none;
+    }
+    .modal
+    {
+        top:-27px;
+    }
+    h4
+    {
+        text-align: center;
+    }
+    .modal {
+    position: relative;
+    text-align: center;
+
+}
+
+
+</style>
+</head>
+<body style="background-image: url('Backgroundimage2.jpg');">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><u>YAV</u></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Schedule a call
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Hire With Us
+                </button>
+                </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Book a call</h4>  
+
+                </div>
+                <p>Our representative will call you within 1hr of the selected time.</p>
+            
+                <div class="modal-body">
+                    <form id="myForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="date">Time for Call:</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="date" class="form-control" id="date" name="date">
+                                </div>
+                                <div class="col-6">
+                                    <input type="time" class="form-control" id="time" name="time">
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary call" id="submitBtn">GET A CALL</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     
+</body>
+</html>
